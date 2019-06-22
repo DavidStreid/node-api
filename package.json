@@ -1,0 +1,24 @@
+{
+  "name": "node-api",
+  "version": "0.0.1",
+  "description": "Simple setup of a node api",
+  "main": "server.js",
+  "keywords": [
+    "webserver",
+    "nodejs",
+    "expressjs",
+    "docker"
+  ],
+  "author": "David Streid",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "express": "*",
+    "request": "*",
+    "cookie-parser": "^1.4.4",
+    "mongoose": "^4.4.12",
+    "mongodb": "^2.1.16"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
+}
