@@ -1,16 +1,15 @@
 ## Simple Node Server Library
-This project is meant to provide simple setup of a node api. Cloning the project into the projects directory should allow requests to be served with mimimal setup.
+This project is meant to provide simple setup of a node api. Cloning the project into the ng's "projects" directory should allow requests to be served with mimimal setup.
 
 Setup
 ```
-$ cd ./PATH_TO/MY_APP
-$ dir=$(pwd)
-$ cd projects
-$ git clone ...
+$ cd ./PATH_TO/MY_APP/projects
+$ git clone https://github.com/DavidStreid/node-api.git
 $ my_api={NAME_YOUR_API}
 $ mv node-api my_api
-$ cd $dir
-$ npm install projects/my_api
+$ cd $my_api
+$ api_path=$(pwd)
+$ npm install
 ```
 
 ### Development of Server endpoints
@@ -19,6 +18,6 @@ If you have mongo installed, start up mongo. If not, proceed to next step (NOTE 
 $ mongod
 ```
 ```
-$ cd $dir                            # dir from 'Setup'
-$ nodemon projects/my_api/server.js
+$ cd $api_path      # from "Setup" section
+$ nodemon server.js
 ```
